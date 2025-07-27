@@ -1,10 +1,9 @@
-## This archive is created by Olga Tapinova for the project
+## This repository is created by Olga Tapinova for the project
 "Integrated Ising Model with global inhibition for decision making" ##
 ## Email: olga.tapinova@weizmann.ac.il ##
 
 
-The archive contains readme.md, readme.txt; 
-Project.toml and Manifest.toml for Julia environment;
+The repository contains readme.md, readme.txt;
 4 folders with data from experiments and IIM simulations, 
 and 1 .jl and 10 .ipynb files with the scripts for simulations 
 and analysis. Each script file is self-contained and can be run 
@@ -25,17 +24,6 @@ Pkg.add([
     "LinearAlgebra", "Makie", "Measures", "NLsolve", "NaNStatistics", 
     "Plots", "Printf", "ProgressMeter", "Roots", "Statistics", "StatsBase"
 ])
-
-## Environment Files ##
-
-This repository includes two Julia environment files that ensure reproducibility:
-
-- **`Project.toml`**  
-  Lists the direct dependencies (packages) required to run the code in this repository.
-
-- **`Manifest.toml`**  
-  Records the full dependency graph and exact versions of all packages, including transitive dependencies.  
-  This guarantees that the code runs with the same package versions as used in the original simulations and analysis.
 
 
 ## DATA ##
@@ -149,25 +137,25 @@ variable (DV) in the abstract Integrated Ising Model (IIM) with global
 inhibition. The function simulates the changes in the spin system
 based on the Gillespie algorithm (SI sec. S2.B).
 
-File: 01_DV_V_distribution_vs_VMF_with_bias
+File: 01_DV_V_distribution_vs_VMF_with_bias.ipynb
 Description: Simulation of the stochastic trajectory of the DV for 
 a fixed set of IIM's parameters, and the distribution of the DV's velocity
 in multiple trajectories. We also compare the velocity distribution
 to the mean-field (MF) solutions for V.
 
-File: 01_Fig.1_PhaseDiagram_Vdistributions
+File: 01_Fig.1_PhaseDiagram_Vdistributions.ipynb
 Description: Fig. 1. We plot the phase diagram of the IIM; the distribution
 of the DV's velocity in different phases, and example trajectories in the 
 phases.
 
-File: 03_error_rt_rtcw_fixed_bias_T
+File: 03_error_rt_rtcw_fixed_bias_T.ipynb
 Description: We obtain the error rate, the mean reaction time (RT), 
 the ratio of the RTs in the correct and wrong decisions (RTc/RTw), and 
 the RT distributions in multiple trajectories as functions of global 
 inhibition (eta) at fixed temperature (T) and evidence (epsilon1, also 
 called "bias" in the scripts).
 
-File: 03_Fig.3_V_dist_ER_RT_vs_bias_hmap_slices_error_rt_rtcw_fixed_bias_RT_distributions
+File: 03_Fig.3_V_dist_ER_RT_vs_bias_hmap_slices_error_rt_rtcw_fixed_bias_RT_distributions.ipynb
 Description: Fig. 3. We plot the distribution of the DV's velocity at a
 fixed non-zero evidence strength (called bias in the scripts); the error
 rate and the mean RT as functions of the evidence strength. We also plot
@@ -176,11 +164,11 @@ inhibition (eta) and temperature (T). Finally, we plot the RT
 distributions in the three phases of the IIM's phase diagram and show
 the comparison using a quantile-quantile (QQ) plot.
 
-File: 04_Fig.4_inhibition_controls_accuracy_updated
+File: 04_Fig.4_inhibition_controls_accuracy_updated.ipynb
 Description: Fig. 4. We analyze the impact of changes in global inhibition
 on the decision accuracy and RT.
 
-File: 05_Fig.5_RDM_task
+File: 05_Fig.5_RDM_task.ipynb
 Description: Fig. 5; SI Fig. S17. We fit the IIM to the data from the
 random-dot motion (RDM) task, presented in Ratcliffe et al. (2016) 
 Fig. 3A-D and Ratcliff and McKoon (2008) Fig. 7. We show the IIM's 
@@ -189,7 +177,7 @@ RT quantiles as functions of coherence in the RDM task and the
 proportion of "right" responses (sec. "Random-dot motion task", 
 SI sec. S8).
 
-File: 06_2armed_bandit_task_separate_trials_data_analysis
+File: 06_2armed_bandit_task_separate_trials_data_analysis.ipynb
 Description: This script analyzes the data from the 2-armed bandit task
 with separate trials (sec. "Two-armed bandit task", SI sec. S10). 
 First, the script loads and processes the data; shows the learning 
@@ -206,7 +194,7 @@ script analyzes the differences in the behavior of the groups
 (SI tab. S8). Finally, it fits the DDM (with equal thresholds) 
 to the data from the groups (SI fig. S23(b)).
 
-File: 06_Fig.6_2armed_bandit_task_separate_trials_IIM_fitting
+File: 06_Fig.6_2armed_bandit_task_separate_trials_IIM_fitting.ipynb
 Description: The script fits the IIM to the data from the 2-armed 
 bandit task (sec. "Two-armed bandit task", SI sec. S10). It loads
 the raw data from the task and processes it. Then, it fits the IIM 
@@ -215,7 +203,7 @@ SI Fig. S21; 0.2 in SI Fig. S22). The script also shows the IIM's
 predictions for the blue group with the same global inhibition as
 in the green group (SI fig. S23(a)).
 
-File: SI_2armed_bandit_task_intermixed_trials_data_analysis
+File: SI_2armed_bandit_task_intermixed_trials_data_analysis.ipynb
 Description: This script analyzes the data from the 2-armed bandit task
 with intermixed trials (SI sec. S7). It loads and processes the data,
 shows the learning process in the task (SI fig. S14(b-c)), the RTs
@@ -227,7 +215,7 @@ loss trials. Finally, we compare the DDM's predictions (with equal
 thresholds) and the IIM's predictions in the disordered phase and
 near the tricritical point with the data (SI fig. S15(d), fig. S16(a)).
 
-File: SI_Fig.S15_2armed_bandit_task_intermixed_trials_IIM_fitting
+File: SI_Fig.S15_2armed_bandit_task_intermixed_trials_IIM_fitting.ipynb
 Description: The script fits the IIM to the preprocessed data from 
 the 2-armed bandit task with intermixed trials (SI sec. S7 fig. S15). 
 It also plots the DDM's predictions (with equal thresholds, 
