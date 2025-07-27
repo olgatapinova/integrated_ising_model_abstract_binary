@@ -59,11 +59,11 @@ This repository includes two Julia environment files that ensure reproducibility
 
 ### Folder: `03_data_IIM_simulations`
 
-- **`data_fixedbias_ZERO_simulation_errorRTratio_eta0_Ts0.04_0.64_niter1000000_L40_nspins20.ipynbd`**  
+- **`data_fixedbias_ZERO_simulation_errorRTratio_eta0_Ts0.04_0.64_niter1000000_L40_nspins20.jld`**  
   IIM simulations at zero inhibition with fixed evidence strength (ε₁ = 0.01), shown in Fig. 2B-D(ii).  
   Includes error rate, mean RT, and RTc/RTw as functions of temperature T.
 
-- **`data_RTquanltiles_Bandit_intermixed_gainloss_...ipynbd`**  
+- **`data_RTquanltiles_Bandit_intermixed_gainloss_...jld`**  
   IIM simulations for the 2-armed bandit task with intermixed trials  
   (see SI Sec. S7, Fig. S15(e–f)). Includes RT quantiles and performance metrics
 
@@ -71,7 +71,7 @@ This repository includes two Julia environment files that ensure reproducibility
   Simulation of decision trajectories across different parameters (T, η, ε₁).  
   Contains metrics like error rate, RT, RTc/RTw, and DV's velocity statistics.
 
-- **`simulations_eta..._T..._iter50000.ipynbd`**  
+- **`simulations_eta..._T..._iter50000.jld`**  
   IIM simulation results used for Fig. 5D. Includes RT quantiles and performance metrics  
   across inhibition and temperature.
 
