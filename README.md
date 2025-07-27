@@ -1,7 +1,6 @@
 # Integrated Ising Model with Global Inhibition for Decision Making
 
 **Author**: Olga Tapinova  
-**Email**: olga.tapinova@weizmann.ac.il
 
 ---
 
