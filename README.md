@@ -59,11 +59,11 @@ This repository includes two Julia environment files that ensure reproducibility
 
 ### Folder: `03_data_IIM_simulations`
 
-- **`data_fixedbias_ZERO_simulation_errorRTratio_eta0_Ts0.04_0.64_niter1000000_L40_nspins20.jld`**  
+- **`data_fixedbias_ZERO_simulation_errorRTratio_eta0_Ts0.04_0.64_niter1000000_L40_nspins20.ipynbd`**  
   IIM simulations at zero inhibition with fixed evidence strength (ε₁ = 0.01), shown in Fig. 2B-D(ii).  
   Includes error rate, mean RT, and RTc/RTw as functions of temperature T.
 
-- **`data_RTquanltiles_Bandit_intermixed_gainloss_...jld`**  
+- **`data_RTquanltiles_Bandit_intermixed_gainloss_...ipynbd`**  
   IIM simulations for the 2-armed bandit task with intermixed trials  
   (see SI Sec. S7, Fig. S15(e–f)). Includes RT quantiles and performance metrics
 
@@ -71,7 +71,7 @@ This repository includes two Julia environment files that ensure reproducibility
   Simulation of decision trajectories across different parameters (T, η, ε₁).  
   Contains metrics like error rate, RT, RTc/RTw, and DV's velocity statistics.
 
-- **`simulations_eta..._T..._iter50000.jld`**  
+- **`simulations_eta..._T..._iter50000.ipynbd`**  
   IIM simulation results used for Fig. 5D. Includes RT quantiles and performance metrics  
   across inhibition and temperature.
 
@@ -115,36 +115,36 @@ This repository includes two Julia environment files that ensure reproducibility
 - **`01_DV_simple_abstract_trajectory.jl`**  
   Simulates abstract DV trajectory in IIM using the Gillespie algorithm (SI Sec. S2.B).
 
-- **`01_DV_V_distribution_vs_VMF_with_bias.jl`**  
+- **`01_DV_V_distribution_vs_VMF_with_bias.ipynb`**  
   Simulates and compares velocity distributions against mean-field predictions.
 
-- **`01_Fig.1_PhaseDiagram_Vdistributions.jl`**  
+- **`01_Fig.1_PhaseDiagram_Vdistributions.ipynb`**  
   Generates phase diagram, velocity distributions, and sample trajectories (Fig. 1).
 
-- **`03_error_rt_rtcw_fixed_bias_T.jl`**  
+- **`03_error_rt_rtcw_fixed_bias_T.ipynb`**  
   Computes error rate, RT, RTc/RTw across inhibition levels at fixed bias.
 
-- **`03_Fig.3_...RT_distributions.jl`**  
+- **`03_Fig.3_...RT_distributions.ipynb`**  
   Generates Fig. 3: DV velocities, error rate heatmaps, RT distributions, QQ plots.
 
-- **`04_Fig.4_inhibition_controls_accuracy_updated.jl`**  
+- **`04_Fig.4_inhibition_controls_accuracy_updated.ipynb`**  
   Analyzes the effect of inhibition on accuracy and RT (Fig. 4).
 
-- **`05_Fig.5_RDM_task.jl`**  
+- **`05_Fig.5_RDM_task.ipynb`**  
   Fits IIM to RDM task data. Produces predictions for error rate, RT, RTc/RTw, quantiles  
   (Fig. 5, SI Fig. S17).
 
-- **`06_2armed_bandit_task_separate_trials_data_analysis.jl`**  
+- **`06_2armed_bandit_task_separate_trials_data_analysis.ipynb`**  
   Processes separate-trial bandit task data. Shows learning, RTs, GABA, DDM fit  
   (SI Fig. S19–S20, S23).
 
-- **`06_Fig.6_2armed_bandit_task_separate_trials_IIM_fitting.jl`**  
+- **`06_Fig.6_2armed_bandit_task_separate_trials_IIM_fitting.ipynb`**  
   Fits IIM to participant groups under various error thresholds. 
   Produces Fig. 6 and SI Figs. S21-23.
 
-- **`SI_2armed_bandit_task_intermixed_trials_data_analysis.jl`**  
+- **`SI_2armed_bandit_task_intermixed_trials_data_analysis.ipynb`**  
   Analyzes learning and behavior in intermixed trials. Compares IIM and DDM fits  
   (SI Fig. S14–S16).
 
-- **`SI_Fig.S15_2armed_bandit_task_intermixed_trials_IIM_fitting.jl`**  
+- **`SI_Fig.S15_2armed_bandit_task_intermixed_trials_IIM_fitting.ipynb`**  
   Fits IIM to data from intermixed trials. Compares to DDM (SI Fig. S15, S16).
